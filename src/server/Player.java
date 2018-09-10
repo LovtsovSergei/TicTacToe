@@ -23,7 +23,7 @@ public class Player extends Thread {
         start();
     }
 
-    static void closeResources(Socket socket, BufferedReader in, PrintWriter out) {
+    public static void closeResources(Socket socket, BufferedReader in, PrintWriter out) {
         try {
             if (!socket.isClosed()) {
                 socket.close();
